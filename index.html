@@ -22,38 +22,47 @@
                     color: red;
                }
                .image {
-                    opacity: 1;
                     display: block;
+                    width: 100%;
                     height: auto;
-                    transition: .5s ease;
-                    backface-visibility: hidden;
+
                }
                .col1:hover .image {
                     opacity: 0.3;
                }
                .col1:hover .middle {
-                    opacity: 1;
-               }
+                    -webkit-transform: scale(1);
+                    -ms-transform: scale(1);
+                    transform: scale(1);               }
                .middle {
-                    transition: .5s ease;
-                    opacity: 0;
-                    position:absolute;
-                /*    top: auto;
-                    left: auto;*/
-                    transform: translate(-50%, -50%);
-                    -ms-transform: translate(-50%, -50%);
-                    text-align: center;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background-color: #008CBA;
+                    overflow: hidden;
+                    width: 100%;
+                    height: 100%;
+                    -webkit-transform: scale(0);
+                    -ms-transform: scale(0);
+                    transform: scale(0);
+                    -webkit-transition: .3s ease;
+                    transition: .3s ease;
                }
                .centered {
-                    background-color: goldenrod;
                     color: white;
-                    font-size: 16px;
-                    padding: 16px 32px;
+                    font-size: 20px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    text-align: center;
                }
                .col1 {
-                    float: left;
-                    width: 40%;
-                    padding: 20px;
+                    position: relative;
+                    width: 50%;
                }
 
                /* Clearfix (clear floats) */
@@ -96,55 +105,55 @@
      <div class="container">
           <div class="row">
                <div class="col1">
-                    <a href="#"><img src="BedRoom.jpg" alt="image of bedroom" class="image"  style="text-align: center; width: 90%">
-                    <div class="middle" style="left: 29%; top: 48.5%">
-                    <div class="centered" style="top: 50%;left: 50%;transform: translate(40%, -330%);font-family:Poppins,verdana,arial,helvetica,sans-serif;font-size:25px;color: white;font-weight:200;">Bed Room</div>
+                    <a href="#"><img src="BedRoom.jpg" alt="image of bedroom" class="image">
+                    <div class="middle">
+                    <div class="centered" >Bed Room</div>
                     </div></a></div>
                <div class="col1">
-                    <a href="#"> <img src="Dining.jpg" alt="image of dining" class="image" style="text-align: center; width:90%">
-                    <div class="middle" style="top: 48%; left: 56%">
-                         <div class="centered" style="top: 50%;left: 50%;transform: translate(38%, -330%);font-family:Poppins,verdana,arial,helvetica,sans-serif;font-size:25px;color: white;font-weight:200;">Dining</div>
+                    <a href="#"> <img src="Dining.jpg" alt="image of dining" class="image" >
+                    <div class="middle" >
+                         <div class="centered">Dining</div>
 
                     </div></a></div>
                <div class="col1">
-                    <a href="#"> <img src="living.jpg" alt="image of living" class="image" style=" text-align: center; width:90%; padding: auto" >
-                    <div class="middle" style=" top: 80%; left: 30%">
-                         <div class="centered" style="top: 50%;left: 50%;transform: translate(45%, -425%);font-family:Poppins,verdana,arial,helvetica,sans-serif;font-size:25px;color: white;font-weight:200;">Living</div>
+                    <a href="#"> <img src="living.jpg" alt="image of living" class="image" >
+                    <div class="middle" >
+                         <div class="centered" style="font-family:Poppins,verdana,arial,helvetica,sans-serif;font-size:25px;color: white;font-weight:200;">Living</div>
                     </div>
                     </a>
                </div>
                <div class="col1">
-                    <a href="#"> <img src="office.jpg" alt="image of office" class="image" style=" text-align: center; width:90%; padding: auto" >
-                    <div class="middle" style="top: 83%;left: 56%">
-                         <div class="centered" style=" top: 50%;left: 50%;transform: translate(38%, -470%);font-family:Poppins,verdana,arial,helvetica,sans-serif;font-size:25px;color: white;font-weight:200;">Office</div>
+                    <a href="#"> <img src="office.jpg" alt="image of office" class="image"  >
+                    <div class="middle">
+                         <div class="centered" style="font-family:Poppins,verdana,arial,helvetica,sans-serif;font-size:25px;color: white;font-weight:200;">Office</div>
                     </div>
                     </a>
                </div>
                <div class="col1">
-                    <a href="#"> <img src="outdoor.jpg" alt="image of outdoor" class="image" style=" text-align: center; width:90%">
-                    <div class="middle" style="top: 109%; left: 30%">
-                         <div class="centered" style="top: 50%;left: 50%;transform: translate(45%, -470%);font-family:Poppins,verdana,arial,helvetica,sans-serif;font-size:25px;color: white;font-weight:200;">Outdoor</div>
+                    <a href="#"> <img src="outdoor.jpg" alt="image of outdoor" class="image">
+                    <div class="middle">
+                         <div class="centered" style="font-family:Poppins,verdana,arial,helvetica,sans-serif;font-size:25px;color: white;font-weight:200;">Outdoor</div>
                     </div>
                     </a>
                </div>
                <div class="col1">
-                    <a href="#"> <img src="accents.jpg" alt="image of accents" class="image" style=" text-align: center; width:90%">
-                    <div class="middle" style="top: 109%; left: 55.8%">
-                    <div class="centered" style="top: 50%;left: 50%;transform: translate(30%, -480%);font-family:Poppins,verdana,arial,helvetica,sans-serif;font-size:25px;color: white;font-weight:200;">Accents</div>
+                    <a href="#"> <img src="accents.jpg" alt="image of accents" class="image">
+                    <div class="middle">
+                    <div class="centered" style="font-family:Poppins,verdana,arial,helvetica,sans-serif;font-size:25px;color: white;font-weight:200;">Accents</div>
                     </div>
                     </a>
                </div>
                <div class="col1">
-                    <a href="#"> <img src="artwork.jpg" alt="image of artwork" class="image" style="text-align: center; width:90%">
-                    <div class="middle" style=" top: 127%; left: 30%">
-                         <div class="centered" style="top: 50%;left: 50%;transform: translate(40%, -650%);font-family:Poppins,verdana,arial,helvetica,sans-serif;font-size:25px;color: white;font-weight:200;">Artwork</div>
+                    <a href="#"> <img src="artwork.jpg" alt="image of artwork" class="image" >
+                    <div class="middle">
+                         <div class="centered" style="font-family:Poppins,verdana,arial,helvetica,sans-serif;font-size:25px;color: white;font-weight:200;">Artwork</div>
                     </div>
                     </a>
                </div>
                <div class="col1">
-                    <a href="#"> <img src="lighting.jpg" alt="image of lighting" class="image" style="text-align: center ; width:90%">
-                    <div class="middle" style=" top: 136%; left: 55%">
-                         <div class="centered" style=" top: 50%;left: 50%;transform: translate(41%, -810%);font-family:Poppins,verdana,arial,helvetica,sans-serif;font-size:25px;color: white; font-weight:200;">Lightning</div>
+                    <a href="#"> <img src="lighting.jpg" alt="image of lighting" class="image" >
+                    <div class="middle" >
+                         <div class="centered" style="font-family:Poppins,verdana,arial,helvetica,sans-serif;font-size:25px;color: white; font-weight:200;">Lightning</div>
                     </div>
                     </a>
                </div>
